@@ -70,3 +70,42 @@ body {
   color: var(--Transparent-white);
   cursor: pointer;
 }
+@media only screen and (max-width: 375px) {
+  body {
+    height: 1050px;
+    align-items: start;
+  }
+  .card {
+    margin: 30px 0;
+    width: 300px;
+    border-radius: 1rem;
+    box-shadow: none;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-column {
+    width: inherit;
+    height: 330px;
+    padding: 30px;
+    color: var(--Very-light-gray);
+  }
+  .card-column p {
+    margin-bottom: 30px;
+    color: var(--Transparent-white);
+    font-size: 13px;
+  }
+  .btn {
+    background-color: white;
+  }
+  .Sedans .btn {
+    color: var(--Bright-orange);
+  }
+  .SUVs .btn {
+    color: var(--Dark-cyan);
+  }
+  .Luxury .btn {
+    color: var(--Very-dark-cyan);
+  }
+}
